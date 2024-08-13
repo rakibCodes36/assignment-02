@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header_container max_width">
+        <div class="logo_container">
+          <div class="logo_text">
+            <h2>Fitness</h2>
+          </div>
+          <div class="mobile_menu">
+            <input type="checkbox" id="menu-checkbox" />
+            <label for="menu-checkbox" class="menu-icon">
+              <!-- <div class="nav-icon"></div> -->
+              <img
+                id="hamburger-icon"
+                src="./images/hamburger-icon.png"
+                alt=""
+              /><img id="close-icon" src="./images/Close.png" alt="hamburger" />
+            </label>
+            <nav class="mobile_nav_menu">
+              <ul>
+                <li><a class="active_nav" href="/">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+            </nav>
+          </div>
+          <nav class="header_nav">
+            <a class="active_nav" href="/">Home</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+          </nav>
+        </div>
+        <div class="hero_section">
+          <div class="hero_content">
+            <h1>Get body in <br /><span> shape</span> & stay healthy</h1>
+            <p>
+              A huge selection of health and fitness content, healthy recipes
+              <br />and transformation stories to help you get fit and stay fit!
+            </p>
+            <button class="btn_primary">Join Club Now</button
+            ><button class="btn_secondary">Download App</button>
+          </div>
+          <div class="hero_img">
+            <img src="./images/Images 2.png" alt="" />
+            <div class="workout">
+              <h2>500+</h2>
+              <p>Free Workout Videos</p>
+            </div>
+            <div class="video_tutorial">
+              <div class="square_box"></div>
+              <div class="tutorial_text">
+                <h4>350+</h4>
+                <p>Video turorial</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
