@@ -567,3 +567,57 @@ input::placeholder {
   font-size: 28px;
   font-weight: 900;
 }
+/* Team Section  */
+.team h2,
+.team > p {
+  text-align: center;
+}
+.team h2 {
+  margin: 88px 0px 14px;
+}
+.team_galary {
+  position: relative;
+  cursor: pointer;
+}
+
+.team_galary img {
+  width: 100%;
+  height: 280px;
+  border-radius: 18px;
+  object-fit: cover;
+}
+.team_galary_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 18px;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin-top: 60px;
+}
+.team_galary:hover .team_overlay {
+  background: rgba(0, 0, 0, 0);
+}
+.team_galary:hover .team_name h3 {
+  font-size: 20px;
+}
+
+.team_overlay {
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transition: all 0.3s ease-in;
+}
+.team_name {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+}
+.team_name h3 {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+}
