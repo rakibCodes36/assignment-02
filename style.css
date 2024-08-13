@@ -467,3 +467,103 @@ header {
 .image_6:hover img {
   transform: scale(1.2);
 }
+/* BMI section  */
+.form_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 12px;
+  margin-bottom: 34px;
+}
+
+#height,
+#age {
+  grid-column: 1;
+}
+
+#weight,
+#sex {
+  grid-column: 2;
+}
+
+#activity {
+  grid-column: span 2;
+}
+
+.bmi {
+  color: #fff;
+  background: rgb(34, 34, 34);
+}
+.bmi table {
+  margin-top: 52px;
+  border-collapse: collapse;
+}
+.bmi table tr td {
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 14px 28px 14px 18px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.bmi table th {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  text-align: left;
+  padding: 14px 28px 14px 18px;
+}
+.bmi_heading {
+  margin: 0px 0px 88px 195px;
+}
+.bmi_main {
+  padding: 52px 0px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+#height,
+#weight,
+#age,
+#sex {
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255);
+  padding: 12px 40px 12px 20px;
+}
+
+#sex,
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+#activity {
+  border: none;
+  border-radius: 8px;
+  background: rgb(57, 57, 57);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+#sex {
+  background-color: rgb(57, 57, 57);
+}
+
+.bmi_calculate {
+  width: 55%;
+}
+.bmi_calculate p {
+  margin: 14px 0px 34px;
+}
+.bmi_chart h2,
+.bmi_calculate h2 {
+  font-size: 28px;
+  font-weight: 900;
+}
