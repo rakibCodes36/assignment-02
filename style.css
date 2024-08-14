@@ -310,36 +310,42 @@ header {
   position: relative;
   grid-column: span 25;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .image_2 {
   position: relative;
   grid-column: span 52;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .image_3 {
   position: relative;
   grid-column: span 29;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .image_4 {
   position: relative;
   grid-column: span 42;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .image_5 {
   position: relative;
   grid-column: span 29;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .image_6 {
   position: relative;
   grid-column: span 35;
   overflow: hidden;
+  cursor: pointer;
 }
 .image_1 .img_overlay {
   position: absolute;
@@ -823,7 +829,9 @@ footer nav a:hover {
   .mobile_nav_menu ul li a:hover {
     background: rgb(230, 83, 60);
   }
-
+  .hero_content .btn_primary {
+    margin-bottom: 10px;
+  }
   .header_nav {
     display: none;
   }
@@ -956,5 +964,15 @@ footer nav a:hover {
   }
   .image_5 {
     grid-column: span 19;
+  }
+  .image_4 h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 60px;
+  }
+  .image_4 .img_text {
+    right: 80px;
+    top: 80px;
   }
 }
