@@ -47,6 +47,9 @@ p {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+.btn_mobile_join {
+  display: none;
+}
 .btn_primary:hover {
   background: rgb(255, 99, 71);
 }
@@ -137,10 +140,9 @@ header {
   font-family: "Miama", sans-serif;
   font-weight: 400;
   font-size: 156px;
-  letter-spacing: 0%;
 }
 .hero_content p {
-  margin: 28px 0px;
+  margin: 28px 60px 28px 0px;
 }
 .hero_content .btn_primary {
   margin-right: 14px;
@@ -214,7 +216,7 @@ header {
 .habit_images {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 36px;
   margin-top: 58px;
 }
 .habit_image {
@@ -249,7 +251,7 @@ header {
   height: 322px;
   border-radius: 18px;
   object-fit: none;
-  object-position: 66% 30%;
+  object-position: 67% 60%;
 }
 /* services section  */
 .services_container {
@@ -555,7 +557,10 @@ input::placeholder {
 #sex {
   background-color: rgb(57, 57, 57);
 }
-#sex, #activity{border-right: 20px solid transparent;}
+#sex,
+#activity {
+  border-right: 20px solid transparent;
+}
 
 .bmi_calculate {
   width: 55%;
@@ -688,4 +693,268 @@ footer nav a:hover {
   padding: 36px 0px;
   text-align: center;
   border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+.hide {
+  display: none;
+}
+.play_icon {
+  display: none;
+}
+
+/* Responsive */
+/* Small devices */
+@media screen and (max-width: 576px) {
+  /* main {
+    padding: 0px 20px;
+  } */
+  .max_width {
+    max-width: 100%;
+  }
+  .section_heading {
+    font-size: 32px;
+  }
+  .header_container {
+    max-height: inherit;
+  }
+  .logo_container {
+    margin: 50px 20px;
+  }
+  .hero_section {
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+  .hero_content h1 {
+    font-size: 36px;
+  }
+  .hero_content h1 span {
+    font-size: 56px;
+  }
+  .hero_content p {
+    margin: 28px 110px 28px 0px;
+  }
+  .btn_mobile_join {
+    display: inline;
+    font-size: 16px;
+    padding: 14px 35px;
+  }
+  .btn_secondary {
+    font-size: 16px;
+    padding: 14px 35px;
+  }
+  .btn_desktop_join {
+    display: none;
+  }
+  .workout {
+    top: 50px;
+    right: 0px;
+    padding: 12px 18px;
+  }
+  .workout p {
+    font-size: 10px;
+  }
+  .video_tutorial {
+    left: 12px;
+    bottom: 250px;
+  }
+  .play_icon {
+    display: block;
+    width: 56px;
+    margin-bottom: -14px;
+  }
+  .square_box {
+    display: none;
+  }
+  .mobile_menu {
+    display: block;
+  }
+
+  .mobile_nav_menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 25px;
+    border-radius: 30px;
+    right: -20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  #menu-checkbox {
+    display: none;
+  }
+  .menu-icon {
+    cursor: pointer;
+  }
+  #menu-checkbox:not(:checked) ~ .menu-icon #close-icon {
+    display: none;
+  }
+  #menu-checkbox:checked ~ .menu-icon #hamburger-icon {
+    display: none;
+  }
+  #menu-checkbox:checked ~ .menu-icon #close-icon {
+    display: block;
+  }
+  #menu-checkbox:not(:checked) ~ .menu-icon #hamburger-icon {
+    display: block;
+  }
+  #menu-checkbox:checked ~ nav {
+    display: block;
+    text-align: center;
+  }
+  .mobile_nav_menu {
+    /* box-sizing: border-box; */
+    /* border: 1px solid rgba(255, 255, 255, 0.1); */
+    /* border-radius: 39px; */
+  }
+  .mobile_nav_menu ul {
+    list-style: none;
+  }
+  .mobile_nav_menu ul li {
+    margin-top: 20px;
+    /* border-bottom: 1px solid gray; */
+  }
+  .mobile_nav_menu ul li a {
+    border-radius: 45px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: background 0.5s;
+  }
+  .mobile_nav_menu ul li a:hover {
+    background: rgb(230, 83, 60);
+  }
+
+  .header_nav {
+    display: none;
+  }
+  .mobile_nav:hover .header_nav {
+    display: block;
+  }
+  .habit_images {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .habit_section {
+    margin: -100px auto 66px;
+    padding: 0px 36px;
+    position: relative;
+    background-color: #0f0f0f;
+  }
+  .habit_section h2 {
+    font-size: 32px;
+  }
+  .habit_image {
+    padding: 0px 48px;
+  }
+  .run_extra {
+    flex-direction: column;
+    gap: 50px;
+    padding: 32px;
+    width: 92%;
+    box-sizing: border-box;
+  }
+  .run_extra .btn_primary {
+    width: 100%;
+  }
+  .run_extra img {
+    width: 287px;
+    height: 170px;
+    object-fit: cover;
+  }
+  .bmi_main {
+    flex-direction: column;
+    align-items: start;
+  }
+  #height,
+  #weight,
+  #age,
+  #sex {
+    /* width: 40%; */
+  }
+  .team_galary_container {
+    grid-template-columns: 1fr;
+    box-sizing: border-box;
+    width: 92%;
+    margin: 56px auto 86px;
+  }
+  .footer_content {
+    grid-template-columns: 1fr;
+    padding: 44px 56px 72px 20px;
+    gap: 20px;
+  }
+  .footer_logo {
+    margin-bottom: 10px;
+  }
+  .footer_nav2 {
+    justify-self: start;
+  }
+  .footer_copyright p {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .services_container {
+    margin: 80px auto;
+    padding: 0px 24px;
+  }
+  .services {
+    grid-template-columns: 1fr;
+  }
+  .bmi_heading {
+    margin: 32px 20px;
+  }
+  .bmi_heading h2 {
+    margin-bottom: 14px;
+  }
+  .bmi_chart h2,
+  .bmi_calculate h2 {
+    font-size: 16px;
+  }
+  .bmi_main {
+    padding: 34px 20px 42px;
+  }
+  .bmi table {
+    margin-top: 23px;
+  }
+  .bmi_calculate {
+    width: 100%;
+  }
+  .form_container {
+    display: grid;
+    grid-template-columns: 48% 48%;
+  }
+  .galary_img_1,
+  .galary_img_4 {
+    display: none;
+  }
+  .galary_img_3 {
+    grid-row: 3;
+  }
+  .galary_img_2 h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 135px;
+  }
+  .training_container {
+    padding: 0px 20px;
+  }
+  .image_3,
+  .image_6 {
+    display: none;
+  }
+  .training_gallery {
+    grid-template-rows: 128px 128px;
+    grid-template-columns: repeat(35, 1fr);
+  }
+  .image_1 {
+    grid-column: span 17;
+  }
+  .image_2 {
+    grid-column: span 18;
+  }
+  .image_4 {
+    grid-column: span 16;
+  }
+  .image_5 {
+    grid-column: span 19;
+  }
 }
