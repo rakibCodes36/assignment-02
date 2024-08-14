@@ -555,6 +555,7 @@ input::placeholder {
 #sex {
   background-color: rgb(57, 57, 57);
 }
+#sex, #activity{border-right: 20px solid transparent;}
 
 .bmi_calculate {
   width: 55%;
@@ -567,6 +568,17 @@ input::placeholder {
   font-size: 28px;
   font-weight: 900;
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  /* margin: 0; */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* For Firefox */
+}
+
 /* Team Section  */
 .team h2,
 .team > p {
