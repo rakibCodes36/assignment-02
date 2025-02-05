@@ -12,7 +12,7 @@ https://rakibcodes36.github.io/assignment-02/
 
 
 ### 2. Screenshot
-![Fitness Club Screenshot](./assets/assignment-02.png) 
+![Fitness Club Screenshot](./images/assignment-2.png) 
 
 ### 3. Technologies Used
 - **Frontend:** HTML5, CSS3
